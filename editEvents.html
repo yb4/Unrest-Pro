@@ -1,42 +1,39 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html>
 <head>
-  <meta charset="utf-8">
-
-  <title>Unrest</title>
-  <meta name="description" content="The HTML5 Herald">
-  <meta name="author" content="SitePoint">
+  <title>Log in</title>
   <link rel="stylesheet" href="css/index.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:300" rel="stylesheet">
 </head>
-
 <body>
   <ul id="navbar">
-    <li class="currentPage"><a href="index.html" class="link">Home</a></li>
-    <li id="login"><a href="editEvents.html" class="link">Edit Events</a></li>
+    <li><a href="index.html" class="link">Home</a></li>
+    <li id="login" class="currentPage"><a href="editEvents.html" class="link">Edit Events</a></li>
   </ul>
-
-  <section id="mainPage">
-    <div id="header">
-      <h1>ProtestPRO</h1>
-      <h3 class="fancy">What's happening now?</h3>
+  <div class="centeredHeader">Edit Events</div>
+  <div class="divider"></div>
+  <section id="loginSection">
+    <div class="centeredHeader">Log in</div>
+    <br>
+    <div id="box">
+      <div id="username">
+      Username
+      <input type="text">
+      </div>
+      <br>
+      <div id="password">
+      Password
+      <input type="password">
+      </div>
+      <br>
+      <button id="loginButton">Log in</button>
+      <button id="registerButton">Register</button>
     </div>
-    <div class="divider"></div>
-    <div id="unique"></div>
   </section>
-  <section id="protestPage">
-    <div id="header">
-      <h1 id="title">Protest Name</h1>
-      <h3 id="description" class="fancy">Description of protest</h3>
-    </div>
-    <div class="divider"></div>
-    <div id="protestTimeAndDate"></div>
-    <div class="mapAndFeedHeader">Location</div>
-    <div id="map"></div>
-    <div class="mapAndFeedHeader">Live Feed</div>
-    <div id="feed"><a class="twitter-timeline" data-tweet-limit="5">Tweets by DubHacks</a></div>
-  </section>
+  <button id="createEventButton">Create or Edit an Event</button>
+  <section id="eventEditor"></section>
+  <div id="last"></div>
 
   <script src="https://www.gstatic.com/firebasejs/4.6.0/firebase.js"></script>
   <script>
@@ -56,6 +53,5 @@
   integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
   crossorigin="anonymous"></script>
   <script src="js/scripts.js"></script>
-
 </body>
 </html>
