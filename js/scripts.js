@@ -46,7 +46,7 @@ function openProtestPage(protestTitle) {
                 allowfullscreen>\
               </iframe>');
             $('.twitter-timeline').attr('href', 'https://twitter.com/' + events.child('twitterUsername').val() + '?ref_src=twsrc%5Etfw');
-            $('.twitter-timeline').after('<script async src="http://platform.twitter.com/widgets.js" charset="utf-8"></script>');
+            $('.twitter-timeline').after('<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>');
           };
         });
       });
